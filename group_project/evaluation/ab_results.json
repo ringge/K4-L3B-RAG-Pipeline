@@ -1,0 +1,1066 @@
+{
+  "date": "2026-09-25",
+  "corpus_commit": "8134d53bcc99e2d2de00b1a580d688e95f86fdb2",
+  "corpus_sha256": "7341100daa1bbbf71cc04f5229b9a5cc951818be2230159f5cc2806c826aba45",
+  "dataset_sha256": "997b8a9d15691d1df1afa807a886766048819da4f501331ed944dd9ab356add5",
+  "embedding_provider": "jina",
+  "embedding_model": "jina-embeddings-v3",
+  "generator_model": "gemini-3.8-flash-high",
+  "evaluator_model": "gemini-3.8-flash-high",
+  "top_k": 5,
+  "candidate_k": 10,
+  "rrf_k": 60,
+  "threshold": 0.3,
+  "fallback_enabled": false,
+  "generator_temperature": 0.3,
+  "generator_top_p": 0.9,
+  "cases": [
+    {
+      "id": "G01",
+      "case_type": "keyword",
+      "question": "Theo Chiến lược Marketing du lịch Việt Nam đến năm 2030, mục tiêu số lượt khách quốc tế và nội địa năm 2030 là bao nhiêu?",
+      "expected_answer": "Đón 35 triệu lượt khách quốc tế và phục vụ 160 triệu lượt khách nội địa.",
+      "expected_context": "- Đến năm 2025, phục hồi và phấn đấu đón 18 triệu lượt khách quốc tế; phục\nvụ 130 triệu lượt khách nội địa, duy trì tốc độ tăng trưởng khách nội địa từ 8 -\n9%/năm. Đến năm 2030, đón 35 triệu lượt khách quốc tế, tốc độ tăng trưởng từ\n13 - 15%/năm; phục vụ 160 triệu lượt khách nội địa, tốc độ tăng trưởng khách nội\nđịa từ 4 - 5%/năm.",
+      "source": "data/standardized/legal/chienluoc-marketing-dulich-vietnam.md",
+      "A": {
+        "retrieval_ms": 915.56,
+        "context_recall": 0.7619,
+        "context_precision": 0.2,
+        "ids": [
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-8",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-45",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-2",
+          "news/article_05.md::chunk-295",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-5"
+        ],
+        "scores": [
+          0.80006,
+          0.74203,
+          0.72736,
+          0.69431,
+          0.68841
+        ],
+        "generation_ms": 4676.06,
+        "answer": "Đến năm 2030, mục tiêu là đón **35 triệu lượt khách quốc tế** và phục vụ **160 triệu lượt khách nội địa**. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-8]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Các số liệu 35 triệu lượt khách quốc tế và 160 triệu lượt khách nội địa năm 2030 đều được nêu rõ trong ngữ cảnh.",
+        "relevance_reason": "Câu trả lời đầy đủ và trực tiếp nêu cả hai mục tiêu được hỏi."
+      },
+      "B": {
+        "retrieval_ms": 967.75,
+        "context_recall": 0.9365,
+        "context_precision": 0.4,
+        "ids": [
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-8",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-2",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-45",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-5",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-7"
+        ],
+        "scores": [
+          0.03252,
+          0.03227,
+          0.03128,
+          0.03101,
+          0.0308
+        ],
+        "generation_ms": 5165.01,
+        "answer": "Đến năm 2030, Việt Nam đặt mục tiêu đón **35 triệu lượt khách quốc tế** và phục vụ **160 triệu lượt khách nội địa**. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-8]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Cả hai số liệu trong câu trả lời đều được nêu rõ trong ngữ cảnh: 35 triệu lượt khách quốc tế và 160 triệu lượt khách nội địa vào năm 2030.",
+        "relevance_reason": "Câu trả lời trực tiếp cung cấp đầy đủ hai mục tiêu số lượt khách được hỏi."
+      }
+    },
+    {
+      "id": "G02",
+      "case_type": "keyword",
+      "question": "Sổ tay du lịch cộng đồng nêu năm bước phát triển dựa vào thị trường theo thứ tự nào?",
+      "expected_answer": "Xác định cơ hội, phân tích giải pháp, huy động đối tác, xây dựng và triển khai, giám sát và điều chỉnh.",
+      "expected_context": "Để phát triển du lịch cộng đồng theo phương pháp dựa vào thị trường, cần phải thực hiện theo 5 bước cơ bản, cụ thể là xác định cơ hội, phân tích giải pháp, huy động sự tham gia của các đối tác, xây dựng và triển khai, và cuối cùng là giám sát và điều chỉnh. Sổ tay du lịch cộng đồng Việt Nam được xây dựng theo phương pháp phát triển năm bước dựa vào thị trường này .",
+      "source": "data/standardized/legal/sotay-dulich-congdong-vietnam.md",
+      "A": {
+        "retrieval_ms": 787.36,
+        "context_recall": 1.0,
+        "context_precision": 0.8,
+        "ids": [
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-85",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-317",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-1",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-133",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-87"
+        ],
+        "scores": [
+          0.82316,
+          0.72845,
+          0.71183,
+          0.67083,
+          0.6607
+        ],
+        "generation_ms": 6539.31,
+        "answer": "Năm bước phát triển du lịch cộng đồng dựa vào thị trường theo thứ tự là:\n\n1. **Xác định cơ hội**  \n2. **Phân tích giải pháp**  \n3. **Huy động sự tham gia của các đối tác**  \n4. **Xây dựng và triển khai**  \n5. **Giám sát và điều chỉnh** [legal/sotay-dulich-congdong-vietnam.md::chunk-85]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Tất cả năm bước và thứ tự nêu trong câu trả lời đều được hỗ trợ trực tiếp bởi ngữ cảnh.",
+        "relevance_reason": "Câu trả lời nêu đầy đủ năm bước theo đúng thứ tự mà câu hỏi yêu cầu."
+      },
+      "B": {
+        "retrieval_ms": 843.06,
+        "context_recall": 1.0,
+        "context_precision": 1.0,
+        "ids": [
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-85",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-87",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-18",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-317",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-189"
+        ],
+        "scores": [
+          0.03279,
+          0.03126,
+          0.02899,
+          0.01613,
+          0.01613
+        ],
+        "generation_ms": 5335.35,
+        "answer": "Năm bước phát triển du lịch cộng đồng dựa vào thị trường theo thứ tự là: **(1) Xác định cơ hội; (2) Phân tích giải pháp; (3) Huy động sự tham gia của các đối tác; (4) Xây dựng và triển khai; (5) Giám sát và điều chỉnh.** [legal/sotay-dulich-congdong-vietnam.md::chunk-85]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Tất cả năm bước và thứ tự được nêu trong ANSWER đều khớp với CONTEXT.",
+        "relevance_reason": "ANSWER trực tiếp nêu đủ năm bước theo đúng thứ tự được hỏi."
+      }
+    },
+    {
+      "id": "G03",
+      "case_type": "keyword",
+      "question": "Hoàng thành Thăng Long có địa chỉ nào trong cẩm nang Hà Nội?",
+      "expected_answer": "19C Hoàng Diệu, Điện Bàn, Ba Đình.",
+      "expected_context": "Hoàng thành Thăng Long là di sản văn hóa thế giới nằm giữa lòng Hà Nội và đã có bề dày lịch sử hơn 1300 năm. Nơi đây chứa đựng những di tích, di vật độc đáo, minh chứng cho [lịch sử](https://vnexpress.net/4-diem-du-lich-tim-hieu-lich-su-o-ha-noi-4134820.html) của Thăng Long – Hà Nội và lịch sử dân tộc Việt Nam trải qua nhiều thời đại. Địa chỉ: 19C Hoàng Diệu, Điện Bàn, Ba Đình.",
+      "source": "data/standardized/news/article_01.md",
+      "A": {
+        "retrieval_ms": 703.87,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_01.md::chunk-18",
+          "news/article_01.md::chunk-17",
+          "news/article_05.md::chunk-89",
+          "news/article_01.md::chunk-42",
+          "news/article_01.md::chunk-97"
+        ],
+        "scores": [
+          0.70069,
+          0.68136,
+          0.50909,
+          0.50715,
+          0.4959
+        ],
+        "generation_ms": 6427.76,
+        "answer": "Hoàng thành Thăng Long có địa chỉ **19C Hoàng Diệu, Điện Bàn, Ba Đình**. [news/article_01.md::chunk-18]",
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "faithfulness_reason": "Địa chỉ trong câu trả lời khớp chính xác với thông tin trong ngữ cảnh.",
+        "relevance_reason": "Câu trả lời trực tiếp cung cấp địa chỉ được hỏi."
+      },
+      "B": {
+        "retrieval_ms": 746.6,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_01.md::chunk-18",
+          "news/article_01.md::chunk-42",
+          "news/article_05.md::chunk-94",
+          "news/article_01.md::chunk-1",
+          "news/article_01.md::chunk-17"
+        ],
+        "scores": [
+          0.03279,
+          0.03078,
+          0.02899,
+          0.02878,
+          0.01613
+        ],
+        "generation_ms": 4208.9,
+        "answer": "Hoàng thành Thăng Long có địa chỉ: **19C Hoàng Diệu, Điện Bàn, Ba Đình**. [news/article_01.md::chunk-18]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Địa chỉ trong câu trả lời được nêu đầy đủ và khớp với ngữ cảnh.",
+        "relevance_reason": "Trả lời trực tiếp đúng địa chỉ mà câu hỏi yêu cầu."
+      }
+    },
+    {
+      "id": "G04",
+      "case_type": "keyword",
+      "question": "Cẩm nang Đà Nẵng nói cầu Rồng phun lửa, phun nước lúc mấy giờ vào những ngày nào trong tuần?",
+      "expected_answer": "Lúc 21h thứ sáu, thứ bảy và chủ nhật; bài cũng nêu các ngày lễ lớn.",
+      "expected_context": "Cầu Rồng được khánh thành năm 2013. Nối thẳng trục đường từ sân bay Đà Nẵng ra các bãi biển Mỹ Khê và Non Nước. Theo lịch phun nước, phun lửa, “con Rồng” trên cầu có khả năng phun lửa và phun nước như thật vào lúc 21h các ngày thứ sáu, thứ bảy, chủ nhật hàng tuần và các ngày lễ lớn trong năm như: tết Dương lịch, tết Âm lịch, 30/4, 2/9. Thường sẽ được phun lửa 2 lượt, mỗi lượt 9 lần, (tổng cộng 18 lần, thời gian khoảng 4 phút) và phun nước 3 lượt, mỗi lượt 30 giây (thời gian tầm 90 giây).",
+      "source": "data/standardized/news/article_02.md",
+      "A": {
+        "retrieval_ms": 735.07,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_02.md::chunk-37",
+          "news/article_02.md::chunk-38",
+          "news/article_02.md::chunk-40",
+          "news/article_02.md::chunk-43",
+          "news/article_02.md::chunk-186"
+        ],
+        "scores": [
+          0.80296,
+          0.72807,
+          0.55734,
+          0.55477,
+          0.55464
+        ],
+        "generation_ms": 4711.86,
+        "answer": "Cầu Rồng phun lửa và phun nước vào **21h các ngày thứ sáu, thứ bảy và chủ nhật hằng tuần**; ngoài ra còn biểu diễn vào một số ngày lễ lớn trong năm. [news/article_02.md::chunk-37]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu đúng thời gian 21h, các ngày thứ sáu, thứ bảy, chủ nhật và bổ sung đúng thông tin về các ngày lễ lớn theo ngữ cảnh.",
+        "relevance_reason": "Trả lời đầy đủ thời gian và các ngày trong tuần mà câu hỏi yêu cầu."
+      },
+      "B": {
+        "retrieval_ms": 778.13,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_02.md::chunk-37",
+          "news/article_02.md::chunk-38",
+          "news/article_02.md::chunk-40",
+          "news/article_02.md::chunk-186",
+          "news/article_02.md::chunk-39"
+        ],
+        "scores": [
+          0.03279,
+          0.03226,
+          0.0315,
+          0.03126,
+          0.03031
+        ],
+        "generation_ms": 4280.11,
+        "answer": "Cầu Rồng phun lửa, phun nước vào lúc **21h các ngày thứ Sáu, thứ Bảy và Chủ nhật hằng tuần**. Hoạt động này cũng diễn ra vào một số ngày lễ lớn trong năm như Tết Dương lịch, Tết Âm lịch, 30/4 và 2/9. [news/article_02.md::chunk-37]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu đúng giờ 21h, đúng các ngày thứ Sáu, thứ Bảy, Chủ nhật và các ngày lễ lớn được CONTEXT hỗ trợ.",
+        "relevance_reason": "Trả lời đầy đủ thời gian và các ngày trong tuần mà câu hỏi yêu cầu, đồng thời bổ sung phù hợp thông tin về ngày lễ."
+      }
+    },
+    {
+      "id": "G05",
+      "case_type": "keyword",
+      "question": "Theo cẩm nang Hội An, vé tham quan 80.000 đồng có giá trị trong bao lâu?",
+      "expected_answer": "24 giờ.",
+      "expected_context": "Với vé tham quan giá 80.000 đồng cho một người giá trị trong 24h bạn có cơ hội tham quan ba trong số những điểm di tích nổi bật nhất ở phố cổ. Đó là Chùa Cầu, các hội quán Phúc Kiến, Quảng Triệu, Hải Nam, Triều Châu, các nhà cổ Quân Thắng, Đức An, Phùng Hưng, Tấn Ký... Ngoài ra vé tham quan cũng bao gồm các hoạt động nghệ thuật đường phố, trò chơi dân gian, chợ đêm... diễn ra sau 7 giờ tối.",
+      "source": "data/standardized/news/article_03.md",
+      "A": {
+        "retrieval_ms": 809.54,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_03.md::chunk-23",
+          "news/article_03.md::chunk-10",
+          "news/article_03.md::chunk-1",
+          "news/article_03.md::chunk-13",
+          "news/article_03.md::chunk-0"
+        ],
+        "scores": [
+          0.56846,
+          0.52782,
+          0.51789,
+          0.51114,
+          0.50904
+        ],
+        "generation_ms": 10483.71,
+        "answer": "Vé tham quan 80.000 đồng có giá trị trong **24 giờ**. [news/article_03.md::chunk-23]",
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "faithfulness_reason": "Câu trả lời nêu vé 80.000 đồng có giá trị 24 giờ, đúng với thông tin trong ngữ cảnh.",
+        "relevance_reason": "Trả lời trực tiếp và đầy đủ thời hạn giá trị của vé."
+      },
+      "B": {
+        "retrieval_ms": 857.63,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_03.md::chunk-23",
+          "news/article_03.md::chunk-0",
+          "news/article_03.md::chunk-10",
+          "news/article_03.md::chunk-43",
+          "news/article_03.md::chunk-1"
+        ],
+        "scores": [
+          0.03279,
+          0.03126,
+          0.03041,
+          0.01613,
+          0.01587
+        ],
+        "generation_ms": 4033.51,
+        "answer": "Vé tham quan 80.000 đồng có giá trị trong **24 giờ**. [news/article_03.md::chunk-23]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu đúng thời hạn 24 giờ, được hỗ trợ trực tiếp bởi ngữ cảnh.",
+        "relevance_reason": "Trả lời đầy đủ và chính xác câu hỏi về thời hạn của vé 80.000 đồng."
+      }
+    },
+    {
+      "id": "G06",
+      "case_type": "keyword",
+      "question": "Theo cẩm nang Sài Gòn của Green SM, mùa khô kéo dài từ tháng nào đến tháng nào?",
+      "expected_answer": "Từ tháng 12 đến tháng 4 năm sau.",
+      "expected_context": "- **Mùa khô (tháng 12 – tháng 4 năm sau)**: Đây là thời điểm lý tưởng nhất để du lịch Sài Gòn vì trời ít mưa, nắng đẹp và không quá oi bức. Thời gian này đặc biệt thích hợp để dạo phố, tham quan di tích lịch sử, trải nghiệm ẩm thực đường phố hoặc khám phá các khu vui chơi ngoài trời.",
+      "source": "data/standardized/news/article_06.md",
+      "A": {
+        "retrieval_ms": 717.43,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "legal/camnang-dulich-saigon.md::chunk-244",
+          "news/article_06.md::chunk-2",
+          "news/article_04.md::chunk-22",
+          "news/article_04.md::chunk-20",
+          "legal/camnang-dulich-saigon.md::chunk-236"
+        ],
+        "scores": [
+          0.58984,
+          0.58163,
+          0.57915,
+          0.57415,
+          0.57249
+        ],
+        "generation_ms": 4368.02,
+        "answer": "Theo cẩm nang Sài Gòn của Green SM, mùa khô kéo dài từ **tháng 12 đến tháng 4 năm sau**. [legal/camnang-dulich-saigon.md::chunk-236]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu mùa khô từ tháng 12 đến tháng 4, đúng với nội dung trong ngữ cảnh.",
+        "relevance_reason": "Trả lời trực tiếp và đầy đủ khoảng thời gian được hỏi."
+      },
+      "B": {
+        "retrieval_ms": 759.77,
+        "context_recall": 0.0,
+        "context_precision": 0.0,
+        "ids": [
+          "news/article_04.md::chunk-22",
+          "legal/camnang-dulich-saigon.md::chunk-236",
+          "news/article_04.md::chunk-20",
+          "legal/camnang-dulich-saigon.md::chunk-244",
+          "news/article_02.md::chunk-12"
+        ],
+        "scores": [
+          0.0315,
+          0.03126,
+          0.03012,
+          0.01639,
+          0.01639
+        ],
+        "generation_ms": 3681.18,
+        "answer": "Theo cẩm nang Sài Gòn của Green SM, mùa khô kéo dài từ **tháng 12 đến tháng 4**. [legal/camnang-dulich-saigon.md::chunk-236]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Thông tin tháng 12 đến tháng 4 được hỗ trợ trực tiếp bởi ngữ cảnh.",
+        "relevance_reason": "Trả lời chính xác và đầy đủ khoảng thời gian được hỏi."
+      }
+    },
+    {
+      "id": "G07",
+      "case_type": "semantic",
+      "question": "Theo sổ tay du lịch cộng đồng, một phần doanh thu dành cho cả cộng đồng có thể hỗ trợ những việc gì?",
+      "expected_answer": "Có thể tái đầu tư vào cơ sở hạ tầng như cầu, đường, điện hoặc phục vụ y tế, giáo dục.",
+      "expected_context": "**Chia sẻ lợi ích.** Việc chia sẻ các lợi ích từ du lịch cho cộng đồng đòi hỏi cộng đồng có thể nhận được các lợi ích giống như các đối tác liên quan khác. Trong việc chia sẻ lợi ích, doanh thu từ các hoạt động du lịch thường được chia cho tất cả những người tham gia, và một phần để riêng đóng góp cho toàn bộ cộng đồng địa phương thông qua quỹ cộng đồng, quỹ này có thể được sử dụng cho các mục đích như tái đầu tư vào cơ sở hạ tầng như cầu, đường, điện hoặc các lĩnh vực lợi ích cộng đồng khác như y tế và giáo dục.",
+      "source": "data/standardized/legal/sotay-dulich-congdong-vietnam.md",
+      "A": {
+        "retrieval_ms": 679.56,
+        "context_recall": 0.9646,
+        "context_precision": 0.4,
+        "ids": [
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-26",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-30",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-202",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-25",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-28"
+        ],
+        "scores": [
+          0.7951,
+          0.72827,
+          0.72332,
+          0.69319,
+          0.68216
+        ],
+        "generation_ms": 5412.28,
+        "answer": "Một phần doanh thu dành cho cộng đồng có thể được đưa vào **quỹ cộng đồng** để:\n\n- Tái đầu tư vào cơ sở hạ tầng như **cầu, đường, điện**.\n- Hỗ trợ các lĩnh vực lợi ích cộng đồng như **y tế và giáo dục**. [legal/sotay-dulich-congdong-vietnam.md::chunk-26]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Các ý trong câu trả lời đều được nêu rõ trong ngữ cảnh: quỹ cộng đồng có thể dùng để tái đầu tư vào cầu, đường, điện và hỗ trợ y tế, giáo dục.",
+        "relevance_reason": "Câu trả lời trực tiếp nêu đầy đủ các mục đích sử dụng phần doanh thu dành cho cộng đồng."
+      },
+      "B": {
+        "retrieval_ms": 721.25,
+        "context_recall": 0.6903,
+        "context_precision": 0.2,
+        "ids": [
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-26",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-194",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-30",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-38",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-202"
+        ],
+        "scores": [
+          0.03279,
+          0.02944,
+          0.01613,
+          0.01613,
+          0.01587
+        ],
+        "generation_ms": 4295.17,
+        "answer": "Một phần doanh thu dành cho cả cộng đồng có thể được đưa vào **quỹ cộng đồng** để:\n\n- Tái đầu tư vào cơ sở hạ tầng như **cầu, đường, điện**.\n- Hỗ trợ các lĩnh vực lợi ích cộng đồng như **y tế và giáo dục**. [legal/sotay-dulich-congdong-vietnam.md::chunk-26]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Các mục đích sử dụng doanh thu được nêu đúng và đầy đủ theo ngữ cảnh: tái đầu tư cơ sở hạ tầng (cầu, đường, điện), y tế và giáo dục.",
+        "relevance_reason": "Trả lời trực tiếp câu hỏi và nêu đầy đủ các việc mà quỹ cộng đồng có thể hỗ trợ."
+      }
+    },
+    {
+      "id": "G08",
+      "case_type": "semantic",
+      "question": "Chiến lược marketing du lịch ưu tiên môi trường nào để quảng bá và xây dựng nội dung điểm đến?",
+      "expected_answer": "Ưu tiên marketing số, xây dựng cơ sở dữ liệu, hệ thống nội dung số và phát huy các kênh marketing trên nền tảng số.",
+      "expected_context": "d) Ưu tiên triển khai marketing số; xây dựng và phát huy hiệu quả cơ sở dữ\nliệu marketing về điểm đến, sản phẩm dịch vụ du lịch Việt Nam, hình thành hệ\nthống nội dung số, phát huy tốt các kênh marketing nền tảng số.",
+      "source": "data/standardized/legal/chienluoc-marketing-dulich-vietnam.md",
+      "A": {
+        "retrieval_ms": 780.41,
+        "context_recall": 0.9048,
+        "context_precision": 0.4,
+        "ids": [
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-23",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-3",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-24",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-4",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-267"
+        ],
+        "scores": [
+          0.69798,
+          0.68181,
+          0.67176,
+          0.65525,
+          0.65091
+        ],
+        "generation_ms": 5758.28,
+        "answer": "Chiến lược marketing du lịch ưu tiên **môi trường số**, đặc biệt là các kênh và nền tảng marketing kỹ thuật số, để quảng bá hình ảnh, giới thiệu điểm đến và xây dựng hệ thống nội dung số về sản phẩm, dịch vụ du lịch Việt Nam. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-3] [legal/chienluoc-marketing-dulich-vietnam.md::chunk-4]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Các nội dung trong câu trả lời đều được hỗ trợ bởi ngữ cảnh về việc ưu tiên marketing số, các kênh nền tảng số và xây dựng nội dung số về điểm đến, sản phẩm, dịch vụ du lịch.",
+        "relevance_reason": "Trả lời trực tiếp môi trường được ưu tiên là môi trường số và nêu đúng các mục đích quảng bá, giới thiệu điểm đến, xây dựng nội dung."
+      },
+      "B": {
+        "retrieval_ms": 822.5,
+        "context_recall": 0.9048,
+        "context_precision": 0.4,
+        "ids": [
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-3",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-267",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-4",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-28",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-34"
+        ],
+        "scores": [
+          0.032,
+          0.03101,
+          0.03078,
+          0.03062,
+          0.03009
+        ],
+        "generation_ms": 5968.74,
+        "answer": "Chiến lược marketing du lịch **ưu tiên môi trường số**, đặc biệt là các **kênh marketing trên nền tảng số**, để quảng bá điểm đến và xây dựng hệ thống nội dung số về điểm đến, sản phẩm, dịch vụ du lịch Việt Nam. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-3] [legal/chienluoc-marketing-dulich-vietnam.md::chunk-4]  \nNgoài ra, việc xây dựng nội dung cần gắn với phân tích dữ liệu thực tế và phát triển cơ sở dữ liệu marketing. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-28]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Các ý trong câu trả lời đều được hỗ trợ bởi ngữ cảnh: ưu tiên marketing số, sử dụng các kênh nền tảng số, xây dựng hệ thống nội dung số và gắn với dữ liệu/cơ sở dữ liệu marketing.",
+        "relevance_reason": "Câu trả lời trực tiếp xác định môi trường được ưu tiên là môi trường số và nêu rõ cách môi trường này phục vụ quảng bá, xây dựng nội dung điểm đến."
+      }
+    },
+    {
+      "id": "G09",
+      "case_type": "semantic",
+      "question": "Trong cẩm nang TP.HCM, nơi nào phù hợp để đi rừng ngập mặn và đảo khỉ khi chỉ có ít thời gian?",
+      "expected_answer": "Cần Giờ.",
+      "expected_context": "Thư thái giữa ngàn\nxanh Cần Giờ\n“Ốc đảo xanh” của thành phố là điểm\nđến hoàn hảo cho những ai muốn tận\nhưởng cảnh sắc thiên nhiên Nam Bộ với\nquỹ thời gian eo hẹp. Chỉ với hơn một\ntiếng đi xe, bạn sẽ được tận hưởng rừng\nngập mặn, đảo khỉ, làn gió biển trong\nlành và thiên đường hải sản tươi rói.",
+      "source": "data/standardized/legal/camnang-dulich-saigon.md",
+      "A": {
+        "retrieval_ms": 771.31,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "legal/camnang-dulich-saigon.md::chunk-183",
+          "legal/camnang-dulich-saigon.md::chunk-201",
+          "legal/camnang-dulich-saigon.md::chunk-199",
+          "legal/camnang-dulich-saigon.md::chunk-20",
+          "legal/camnang-dulich-saigon.md::chunk-181"
+        ],
+        "scores": [
+          0.52943,
+          0.50969,
+          0.50365,
+          0.48268,
+          0.47594
+        ],
+        "generation_ms": 4421.59,
+        "answer": "Khu sinh thái **Cần Giờ** phù hợp nhất: chỉ cách trung tâm TP.HCM hơn một giờ đi xe, có rừng ngập mặn và đảo khỉ để tham quan khi quỹ thời gian eo hẹp. [legal/camnang-dulich-saigon.md::chunk-20]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Các thông tin về Cần Giờ, thời gian di chuyển hơn một giờ, rừng ngập mặn và đảo khỉ đều được CONTEXT hỗ trợ.",
+        "relevance_reason": "Trả lời trực tiếp địa điểm phù hợp và nêu đúng lý do liên quan đến quỹ thời gian eo hẹp."
+      },
+      "B": {
+        "retrieval_ms": 845.93,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "legal/camnang-dulich-saigon.md::chunk-201",
+          "legal/camnang-dulich-saigon.md::chunk-20",
+          "legal/camnang-dulich-saigon.md::chunk-183",
+          "legal/camnang-dulich-saigon.md::chunk-232",
+          "legal/camnang-dulich-saigon.md::chunk-199"
+        ],
+        "scores": [
+          0.03252,
+          0.03175,
+          0.0311,
+          0.03054,
+          0.03037
+        ],
+        "generation_ms": 4634.13,
+        "answer": "Cần Giờ phù hợp nhất: nơi đây được giới thiệu là “ốc đảo xanh” của TP.HCM, chỉ cách trung tâm hơn một tiếng đi xe, có rừng ngập mặn và đảo khỉ. [legal/camnang-dulich-saigon.md::chunk-20]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Các nhận định về Cần Giờ, thời gian di chuyển hơn một tiếng, rừng ngập mặn và đảo khỉ đều được hỗ trợ trực tiếp bởi Context.",
+        "relevance_reason": "Trả lời đúng địa điểm được hỏi và giải thích vì sao phù hợp khi có ít thời gian."
+      }
+    },
+    {
+      "id": "G10",
+      "case_type": "semantic",
+      "question": "Món ăn sáng Đà Nẵng nào có sợi dẹt, tôm hoặc thịt, trứng, đậu phộng và bánh đa giòn?",
+      "expected_answer": "Mì Quảng.",
+      "expected_context": "Đây là “thức quà sáng” phổ biến ở Đà Nẵng. Một số nơi trên đường Hải Phòng, Nguyễn Hữu Thọ, Nguyễn Công Trứ bán cả ngày. Một tô mì quảng “truyền thống” có sợi mì trắng dẹt, tôm, thịt heo hoặc gà, trứng, đậu phộng rang, bánh đa giòn, ăn kèm các loại rau thơm.",
+      "source": "data/standardized/news/article_02.md",
+      "A": {
+        "retrieval_ms": 658.85,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_02.md::chunk-100",
+          "news/article_06.md::chunk-70",
+          "news/article_02.md::chunk-99",
+          "news/article_02.md::chunk-149",
+          "news/article_02.md::chunk-106"
+        ],
+        "scores": [
+          0.65351,
+          0.52955,
+          0.51492,
+          0.48078,
+          0.47746
+        ],
+        "generation_ms": 5406.78,
+        "answer": "Mì Quảng có sợi mì dẹt, tôm hoặc thịt, trứng, đậu phộng rang và bánh đa giòn. [news/article_02.md::chunk-100]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu đúng món mì Quảng và các thành phần được ngữ cảnh hỗ trợ.",
+        "relevance_reason": "Trả lời trực tiếp món ăn được hỏi và bao gồm đầy đủ các đặc điểm, thành phần liên quan."
+      },
+      "B": {
+        "retrieval_ms": 699.34,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_02.md::chunk-100",
+          "news/article_02.md::chunk-109",
+          "news/article_06.md::chunk-70",
+          "news/article_02.md::chunk-118",
+          "news/article_02.md::chunk-99"
+        ],
+        "scores": [
+          0.03279,
+          0.03031,
+          0.01613,
+          0.01613,
+          0.01587
+        ],
+        "generation_ms": 4124.44,
+        "answer": "Mì Quảng có sợi mì trắng dẹt, tôm hoặc thịt, trứng, đậu phộng rang và bánh đa giòn. [news/article_02.md::chunk-100]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu đúng món mì Quảng và các thành phần đều được hỗ trợ trực tiếp bởi ngữ cảnh.",
+        "relevance_reason": "Trả lời đầy đủ món ăn và các đặc điểm được hỏi."
+      }
+    },
+    {
+      "id": "G11",
+      "case_type": "semantic",
+      "question": "Du khách muốn dạo phố Hội An khi trời mát và nắng chưa gắt nên chọn khoảng thời gian nào theo cẩm nang?",
+      "expected_answer": "Ba tháng đầu năm.",
+      "expected_context": "Ba tháng đầu năm là thời gian lý tưởng nhất để rong chơi tại Hội An khi nắng không quá gắt, trời mát mẻ, thi thoảng có mưa nhỏ.",
+      "source": "data/standardized/news/article_03.md",
+      "A": {
+        "retrieval_ms": 718.56,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_03.md::chunk-6",
+          "news/article_03.md::chunk-7",
+          "news/article_06.md::chunk-2",
+          "news/article_03.md::chunk-3",
+          "news/article_03.md::chunk-5"
+        ],
+        "scores": [
+          0.73865,
+          0.63428,
+          0.59858,
+          0.59489,
+          0.5801
+        ],
+        "generation_ms": 4614.71,
+        "answer": "Du khách nên chọn **ba tháng đầu năm**, vì đây là thời gian Hội An mát mẻ, nắng chưa gắt và đôi khi có mưa nhỏ. [news/article_03.md::chunk-6]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu đúng ba tháng đầu năm và các đặc điểm thời tiết được hỗ trợ trực tiếp bởi ngữ cảnh.",
+        "relevance_reason": "Trả lời đầy đủ khoảng thời gian du khách nên chọn và lý do phù hợp với yêu cầu."
+      },
+      "B": {
+        "retrieval_ms": 758.52,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_03.md::chunk-6",
+          "news/article_06.md::chunk-2",
+          "news/article_03.md::chunk-7",
+          "news/article_04.md::chunk-61",
+          "legal/camnang-dulich-saigon.md::chunk-245"
+        ],
+        "scores": [
+          0.03279,
+          0.03175,
+          0.03151,
+          0.03128,
+          0.0292
+        ],
+        "generation_ms": 4855.06,
+        "answer": "Du khách nên chọn **ba tháng đầu năm (tháng 1–3)** để dạo phố Hội An, vì thời tiết mát mẻ, nắng chưa gắt và đôi khi có mưa nhỏ. [news/article_03.md::chunk-6]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu đúng ba tháng đầu năm và các đặc điểm thời tiết được hỗ trợ trực tiếp bởi ngữ cảnh.",
+        "relevance_reason": "Trả lời đầy đủ khoảng thời gian được hỏi và giải thích phù hợp với điều kiện trời mát, nắng chưa gắt."
+      }
+    },
+    {
+      "id": "G12",
+      "case_type": "semantic",
+      "question": "Bài gợi ý du lịch theo tháng chọn địa danh miền Bắc nào để đi du thuyền ngắm vịnh trong tháng 11?",
+      "expected_answer": "Hạ Long.",
+      "expected_context": "Tháng 11 là thời điểm lý tưởng để khám phá miền Bắc Việt Nam, nơi thời tiết chuyển mình sang se lạnh, cảnh sắc mùa thu tuyệt đẹp với lá vàng và không khí trong lành. Hà Nội, với vẻ đẹp cổ kính và những hàng cây lá đỏ, là điểm đến không thể bỏ qua. Đây cũng là thời gian thích hợp để thăm quan Hạ Long, nơi bạn có thể tận hưởng vẻ đẹp kỳ vĩ của vịnh biển trên một chuyến du thuyền trong tiết trời mát mẻ.",
+      "source": "data/standardized/news/article_04.md",
+      "A": {
+        "retrieval_ms": 765.49,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_04.md::chunk-62",
+          "news/article_04.md::chunk-25",
+          "news/article_04.md::chunk-61",
+          "news/article_04.md::chunk-60",
+          "news/article_04.md::chunk-29"
+        ],
+        "scores": [
+          0.74794,
+          0.56203,
+          0.51934,
+          0.51671,
+          0.48989
+        ],
+        "generation_ms": 3315.24,
+        "answer": "Hạ Long là địa danh miền Bắc được gợi ý để đi du thuyền ngắm vịnh trong tháng 11. [news/article_04.md::chunk-62]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu Hạ Long là địa danh miền Bắc phù hợp đi du thuyền ngắm vịnh trong tháng 11, hoàn toàn được hỗ trợ bởi ngữ cảnh.",
+        "relevance_reason": "Trả lời đúng và đầy đủ địa danh được hỏi là Hạ Long."
+      },
+      "B": {
+        "retrieval_ms": 811.35,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_04.md::chunk-25",
+          "news/article_04.md::chunk-62",
+          "news/article_04.md::chunk-18",
+          "news/article_04.md::chunk-29",
+          "news/article_04.md::chunk-31"
+        ],
+        "scores": [
+          0.03252,
+          0.03202,
+          0.03128,
+          0.03009,
+          0.02985
+        ],
+        "generation_ms": 3752.17,
+        "answer": "Hạ Long [news/article_04.md::chunk-25]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Hạ Long được nêu rõ trong ngữ cảnh là địa điểm miền Bắc phù hợp để đi du thuyền ngắm vịnh vào tháng 11.",
+        "relevance_reason": "Câu trả lời xác định đúng địa danh được hỏi: Hạ Long."
+      }
+    },
+    {
+      "id": "G13",
+      "case_type": "cross_source",
+      "question": "Bài Du lịch Việt Nam ghi nhận thực tế đón bao nhiêu lượt khách quốc tế năm 2019?",
+      "expected_answer": "18 triệu lượt khách quốc tế.",
+      "expected_context": "Năm 2019, ngành Du lịch Việt Nam lập kỷ lục khi lần đầu tiên đón 18 triệu lượt khách quốc tế, tăng 16,2% so với năm 2018.",
+      "source": "data/standardized/news/article_05.md",
+      "A": {
+        "retrieval_ms": 667.83,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_05.md::chunk-247",
+          "news/article_05.md::chunk-261",
+          "news/article_05.md::chunk-8",
+          "news/article_05.md::chunk-262",
+          "news/article_05.md::chunk-250"
+        ],
+        "scores": [
+          0.7591,
+          0.67573,
+          0.67119,
+          0.65169,
+          0.64521
+        ],
+        "generation_ms": 7204.9,
+        "answer": "Năm 2019, Việt Nam đón **18 triệu lượt khách quốc tế**. [news/article_05.md::chunk-8]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Thông tin 18 triệu lượt khách quốc tế năm 2019 được nêu trực tiếp trong ngữ cảnh.",
+        "relevance_reason": "Câu trả lời nêu đúng số lượt khách và đúng năm được hỏi."
+      },
+      "B": {
+        "retrieval_ms": 709.33,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_05.md::chunk-247",
+          "news/article_05.md::chunk-8",
+          "news/article_05.md::chunk-261",
+          "news/article_05.md::chunk-262",
+          "news/article_05.md::chunk-250"
+        ],
+        "scores": [
+          0.03279,
+          0.032,
+          0.03175,
+          0.03101,
+          0.03031
+        ],
+        "generation_ms": 3332.79,
+        "answer": "Năm 2019, Việt Nam đón **18 triệu lượt khách quốc tế**. [news/article_05.md::chunk-8]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu 18 triệu lượt khách quốc tế năm 2019, hoàn toàn được hỗ trợ bởi ngữ cảnh.",
+        "relevance_reason": "Trả lời trực tiếp và đầy đủ số lượt khách quốc tế được hỏi."
+      }
+    },
+    {
+      "id": "G14",
+      "case_type": "cross_source",
+      "question": "Chiến lược marketing đặt mục tiêu bao nhiêu khách quốc tế vào năm 2025, khác với số liệu thực tế năm 2019?",
+      "expected_answer": "Phấn đấu đón 18 triệu lượt khách quốc tế năm 2025.",
+      "expected_context": "- Đến năm 2025, phục hồi và phấn đấu đón 18 triệu lượt khách quốc tế; phục\nvụ 130 triệu lượt khách nội địa, duy trì tốc độ tăng trưởng khách nội địa từ 8 -\n9%/năm. Đến năm 2030, đón 35 triệu lượt khách quốc tế, tốc độ tăng trưởng từ\n13 - 15%/năm; phục vụ 160 triệu lượt khách nội địa, tốc độ tăng trưởng khách nội\nđịa từ 4 - 5%/năm.",
+      "source": "data/standardized/legal/chienluoc-marketing-dulich-vietnam.md",
+      "A": {
+        "retrieval_ms": 668.24,
+        "context_recall": 0.9365,
+        "context_precision": 0.4,
+        "ids": [
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-7",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-18",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-8",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-22",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-45"
+        ],
+        "scores": [
+          0.65978,
+          0.65124,
+          0.60121,
+          0.58115,
+          0.5274
+        ],
+        "generation_ms": 5137.0,
+        "answer": "Chiến lược marketing đặt mục tiêu **đón 18 triệu lượt khách quốc tế vào năm 2025**.[legal/chienluoc-marketing-dulich-vietnam.md::chunk-8]\n\nTuy nhiên, context không cung cấp **số liệu thực tế năm 2019**, nên không thể xác minh mức chênh lệch so với năm đó.",
+        "faithfulness": 0.95,
+        "answer_relevance": 0.8,
+        "faithfulness_reason": "Nêu đúng mục tiêu 18 triệu lượt khách quốc tế năm 2025; nhận định rằng context không cung cấp số liệu năm 2019 là chính xác.",
+        "relevance_reason": "Trả lời được mục tiêu năm 2025 và chỉ ra không đủ dữ liệu để xác định chênh lệch, nhưng chưa đưa ra được mức chênh lệch cụ thể."
+      },
+      "B": {
+        "retrieval_ms": 710.19,
+        "context_recall": 0.9365,
+        "context_precision": 0.4,
+        "ids": [
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-7",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-284",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-18",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-2",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-8"
+        ],
+        "scores": [
+          0.03279,
+          0.03037,
+          0.01613,
+          0.01613,
+          0.01587
+        ],
+        "generation_ms": 6444.04,
+        "answer": "Chiến lược marketing đặt mục tiêu **đón 18 triệu lượt khách quốc tế vào năm 2025**. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-7]\n\nTuy nhiên, context không cung cấp số liệu thực tế năm 2019, nên **không thể xác minh mức chênh lệch** giữa mục tiêu năm 2025 và số liệu năm 2019.",
+        "faithfulness": 1,
+        "answer_relevance": 0.9,
+        "faithfulness_reason": "Mục tiêu 18 triệu lượt khách quốc tế năm 2025 được nêu trực tiếp trong context; nhận định context không có số liệu thực tế năm 2019 cũng chính xác.",
+        "relevance_reason": "Nêu đúng mục tiêu và giải thích không thể tính chênh lệch vì thiếu số liệu năm 2019 trong context."
+      }
+    },
+    {
+      "id": "G15",
+      "case_type": "cross_source",
+      "question": "Riêng cẩm nang Đà Nẵng ghi mùa mưa ở thành phố này bắt đầu và kết thúc vào tháng nào?",
+      "expected_answer": "Bắt đầu tháng 8 và kéo dài đến tháng 12.",
+      "expected_context": "Đà Nẵng có vị trí địa lý đặc biệt, nằm ở vùng chuyển tiếp giữa hai miền Bắc – Nam. Chịu ảnh hưởng chủ yếu của khí hậu nhiệt đới gió mùa phía Nam. Thành phố có hai mùa rõ rệt trong năm. Mùa khô kéo dài từ tháng 1 đến tháng 7. Và mùa mưa bắt đầu từ tháng 8 đến tháng 12. Đôi khi, thời tiết lạnh nhẹ vào mùa đông. Nhưng không kéo dài và không quá khắc nghiệt. Và dù ở thời điểm nào trong năm, thì Đã Nẵng vẫn mang đến cho bạn những trải nghiệm rất riêng.",
+      "source": "data/standardized/news/article_02.md",
+      "A": {
+        "retrieval_ms": 718.79,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_02.md::chunk-12",
+          "legal/camnang-dulich-saigon.md::chunk-245",
+          "news/article_02.md::chunk-14",
+          "news/article_03.md::chunk-8",
+          "news/article_02.md::chunk-11"
+        ],
+        "scores": [
+          0.59285,
+          0.56502,
+          0.5641,
+          0.56241,
+          0.55552
+        ],
+        "generation_ms": 4137.11,
+        "answer": "Mùa mưa ở Đà Nẵng bắt đầu từ **tháng 8** và kết thúc vào **tháng 12**. [news/article_02.md::chunk-12]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu mùa mưa Đà Nẵng bắt đầu từ tháng 8 và kết thúc vào tháng 12, hoàn toàn được hỗ trợ bởi Context Document 1.",
+        "relevance_reason": "Trả lời trực tiếp và đầy đủ cả tháng bắt đầu lẫn tháng kết thúc theo câu hỏi."
+      },
+      "B": {
+        "retrieval_ms": 757.05,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_02.md::chunk-12",
+          "news/article_04.md::chunk-20",
+          "legal/camnang-dulich-saigon.md::chunk-245",
+          "legal/camnang-dulich-saigon.md::chunk-244",
+          "news/article_03.md::chunk-8"
+        ],
+        "scores": [
+          0.03279,
+          0.03128,
+          0.03105,
+          0.03058,
+          0.03012
+        ],
+        "generation_ms": 6899.36,
+        "answer": "Cẩm nang Đà Nẵng ghi mùa mưa bắt đầu từ tháng 8 và kết thúc vào tháng 12. [news/article_02.md::chunk-12]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Thông tin mùa mưa bắt đầu tháng 8 và kết thúc tháng 12 được nêu rõ trong ngữ cảnh.",
+        "relevance_reason": "Trả lời đầy đủ cả tháng bắt đầu và tháng kết thúc theo câu hỏi."
+      }
+    },
+    {
+      "id": "G16",
+      "case_type": "cross_source",
+      "question": "Theo cẩm nang Sài Gòn của Green SM, mùa mưa ở Sài Gòn kéo dài từ tháng nào đến tháng nào?",
+      "expected_answer": "Từ tháng 5 đến tháng 11.",
+      "expected_context": "- **Mùa mưa (tháng 5 – tháng 11)**: Sài Gòn thường có những cơn mưa rào bất chợt nhưng không kéo dài. Nếu bạn thích không gian lãng mạn, những cơn mưa nhẹ sẽ làm thành phố mang một vẻ đẹp rất riêng. Chỉ cần chuẩn bị áo mưa hoặc ô là bạn vẫn có thể tận hưởng chuyến đi một cách trọn vẹn.",
+      "source": "data/standardized/news/article_06.md",
+      "A": {
+        "retrieval_ms": 717.87,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_06.md::chunk-3",
+          "news/article_06.md::chunk-1",
+          "legal/camnang-dulich-saigon.md::chunk-245",
+          "news/article_06.md::chunk-2",
+          "legal/camnang-dulich-saigon.md::chunk-236"
+        ],
+        "scores": [
+          0.69069,
+          0.62855,
+          0.61331,
+          0.60622,
+          0.56657
+        ],
+        "generation_ms": 17027.48,
+        "answer": "Mùa mưa ở Sài Gòn kéo dài từ **tháng 5 đến tháng 11**. [legal/camnang-dulich-saigon.md::chunk-236]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu mùa mưa từ tháng 5 đến tháng 11, đúng với thông tin trong ngữ cảnh.",
+        "relevance_reason": "Trả lời trực tiếp và đầy đủ khoảng thời gian được hỏi."
+      },
+      "B": {
+        "retrieval_ms": 765.5,
+        "context_recall": 1.0,
+        "context_precision": 0.2,
+        "ids": [
+          "news/article_06.md::chunk-3",
+          "news/article_06.md::chunk-1",
+          "legal/camnang-dulich-saigon.md::chunk-236",
+          "news/article_06.md::chunk-0",
+          "news/article_04.md::chunk-21"
+        ],
+        "scores": [
+          0.03227,
+          0.03151,
+          0.03054,
+          0.03041,
+          0.0292
+        ],
+        "generation_ms": 3502.52,
+        "answer": "Mùa mưa ở Sài Gòn kéo dài từ **tháng 5 đến tháng 11**. [news/article_06.md::chunk-3]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Câu trả lời nêu mùa mưa từ tháng 5 đến tháng 11, đúng với thông tin trong ngữ cảnh.",
+        "relevance_reason": "Trả lời trực tiếp và đầy đủ khoảng thời gian được hỏi."
+      }
+    },
+    {
+      "id": "G17",
+      "case_type": "cross_source",
+      "question": "Chiến lược marketing quy định tiêu đề quảng bá nào cho khách quốc tế và tiêu đề nào cho khách nội địa?",
+      "expected_answer": "Khách quốc tế: “Vietnam - Timeless Charm”; khách nội địa: “Việt Nam - Vẻ đẹp bất tận”.",
+      "expected_context": "+ Tiêu đề, biểu tượng: Tiếp tục quảng bá thương hiệu du lịch Việt Nam với\ntiêu đề và biểu tượng “Vietnam - Timeless Charm” đối với thị trường khách du\nlịch quốc tế và “Việt Nam - Vẻ đẹp bất tận” đối với thị trường khách du lịch nội\nđịa. Phát triển các tiêu đề, biểu tượng nhánh phù hợp với các thị trường mục tiêu\ntheo từng giai đoạn.",
+      "source": "data/standardized/legal/chienluoc-marketing-dulich-vietnam.md",
+      "A": {
+        "retrieval_ms": 2623.22,
+        "context_recall": 1.0,
+        "context_precision": 0.4,
+        "ids": [
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-10",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-23",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-18",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-24",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-284"
+        ],
+        "scores": [
+          0.65156,
+          0.65019,
+          0.6415,
+          0.62242,
+          0.61063
+        ],
+        "generation_ms": 5592.46,
+        "answer": "- Khách du lịch quốc tế: **“Vietnam - Timeless Charm”**. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-10]\n- Khách du lịch nội địa: **“Việt Nam - Vẻ đẹp bất tận”**. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-10]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Cả hai tiêu đề trong câu trả lời đều được nêu rõ và khớp chính xác với ngữ cảnh.",
+        "relevance_reason": "Trả lời đầy đủ hai đối tượng khách và tiêu đề tương ứng theo câu hỏi."
+      },
+      "B": {
+        "retrieval_ms": 2667.26,
+        "context_recall": 1.0,
+        "context_precision": 0.4,
+        "ids": [
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-10",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-284",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-23",
+          "legal/sotay-dulich-congdong-vietnam.md::chunk-143",
+          "legal/chienluoc-marketing-dulich-vietnam.md::chunk-18"
+        ],
+        "scores": [
+          0.03279,
+          0.03101,
+          0.01613,
+          0.01613,
+          0.01587
+        ],
+        "generation_ms": 3974.33,
+        "answer": "- Khách du lịch quốc tế: **“Vietnam - Timeless Charm”**. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-10]  \n- Khách du lịch nội địa: **“Việt Nam - Vẻ đẹp bất tận”**. [legal/chienluoc-marketing-dulich-vietnam.md::chunk-10]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Cả hai tiêu đề trong câu trả lời đều được nêu rõ và khớp với ngữ cảnh.",
+        "relevance_reason": "Câu trả lời xác định đầy đủ tiêu đề cho cả khách quốc tế và khách nội địa."
+      }
+    },
+    {
+      "id": "G18",
+      "case_type": "cross_source",
+      "question": "Theo bài Green SM về Sài Gòn, Saigon Water Bus khởi hành từ bến nào?",
+      "expected_answer": "Bến Bạch Đằng.",
+      "expected_context": "### Đi buýt trên sông Sài Gòn (Saigon Water Bus)\n\nNếu đã quen với những chuyến xe buýt trên đường phố, tại sao không thử đổi gió với một hành trình trên Saigon Water Bus? Đây là phương tiện lý tưởng để du khách tận hưởng khung cảnh thành phố từ dòng sông Sài Gòn thơ mộng, đặc biệt là vào buổi hoàng hôn khi ánh đèn lung linh phản chiếu trên mặt nước.\n\nHành trình khởi hành từ bến Bạch Đằng, đi qua nhiều điểm dừng như Linh Đông, Bình An, Hiệp Bình Chánh, du khách được chiêm ngưỡng những tòa nhà chọc trời và không gian ven sông thoáng đãng. Chỉ cần mua vé tại bến hoặc đặt trước qua ứng dụng, bạn đã có thể tận hưởng một chuyến đi yên bình giữa lòng thành phố náo nhiệt.",
+      "source": "data/standardized/news/article_06.md",
+      "A": {
+        "retrieval_ms": 730.86,
+        "context_recall": 0.5074,
+        "context_precision": 0.4,
+        "ids": [
+          "news/article_06.md::chunk-59",
+          "news/article_06.md::chunk-58",
+          "legal/camnang-dulich-saigon.md::chunk-230",
+          "news/article_06.md::chunk-82",
+          "legal/camnang-dulich-saigon.md::chunk-188"
+        ],
+        "scores": [
+          0.6366,
+          0.54934,
+          0.49685,
+          0.49343,
+          0.48358
+        ],
+        "generation_ms": 5923.56,
+        "answer": "Không đủ thông tin trong context để xác minh Saigon Water Bus khởi hành từ bến nào. [news/article_06.md::chunk-59]",
+        "faithfulness": 1,
+        "answer_relevance": 0.3,
+        "faithfulness_reason": "Context không nêu bến khởi hành, nên nhận định rằng không đủ thông tin để xác minh là phù hợp.",
+        "relevance_reason": "Trả lời đúng tình trạng thiếu dữ liệu nhưng không cung cấp được tên bến mà câu hỏi yêu cầu."
+      },
+      "B": {
+        "retrieval_ms": 769.58,
+        "context_recall": 0.9706,
+        "context_precision": 0.6,
+        "ids": [
+          "news/article_06.md::chunk-59",
+          "news/article_06.md::chunk-13",
+          "news/article_06.md::chunk-60",
+          "news/article_06.md::chunk-58",
+          "news/article_06.md::chunk-96"
+        ],
+        "scores": [
+          0.03279,
+          0.02986,
+          0.02857,
+          0.01613,
+          0.01613
+        ],
+        "generation_ms": 3398.88,
+        "answer": "Saigon Water Bus khởi hành từ **bến Bạch Đằng**. [news/article_06.md::chunk-60]",
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "faithfulness_reason": "Thông tin bến Bạch Đằng được nêu rõ trong ngữ cảnh.",
+        "relevance_reason": "Trả lời trực tiếp và đầy đủ câu hỏi về bến khởi hành."
+      }
+    }
+  ],
+  "indexed_chunks": 1727,
+  "retrieval_complete": true,
+  "generation_complete": true
+}
