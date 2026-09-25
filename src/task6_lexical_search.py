@@ -11,36 +11,43 @@ CORPUS: list[dict] = []
 
 def build_bm25_index(corpus: list[dict]):
     """Tạo BM25 index từ cùng corpus chunks của Task 4."""
-    # TODO: Tokenize và tạo BM25 index.
-    #
-    # from rank_bm25 import BM25Okapi
-    # tokenized = [item["content"].lower().split() for item in corpus]
-    # return BM25Okapi(tokenized)
-    raise NotImplementedError("Implement build_bm25_index")
+    from rank_bm25 import BM25Okapi
+
+    tokenized = [item["content"].lower().split() for item in corpus]
+    return BM25Okapi(tokenized)
 
 
 def lexical_search(query: str, top_k: int = 10) -> list[dict]:
     """Trả về BM25 SearchResult theo score giảm dần."""
-    # TODO: Tính BM25 scores và map lại corpus.
-    #
-    # import numpy as np
-    # bm25 = build_bm25_index(CORPUS)
-    # scores = bm25.get_scores(query.lower().split())
-    # indices = np.argsort(scores)[::-1][:top_k]
-    # results = []
-    # for index in indices:
-    #     if scores[index] <= 0:
-    #         continue
-    #     item = CORPUS[index]
-    #     results.append({
-    #         "id": item["id"],
-    #         "content": item["content"],
-    #         "score": float(scores[index]),
-    #         "metadata": item["metadata"],
-    #         "retrieval_method": "bm25",
-    #     })
-    # return results
-    raise NotImplementedError("Implement lexical_search")
+    if top_k <= 0 or not CORPUS:
+        return []
+
+    query_tokens = query.lower().split()
+    if not query_tokens:
+        return []
+
+    bm25 = build_bm25_index(CORPUS)
+    scores = bm25.get_scores(query_tokens)
+    query_vocabulary = set(query_tokens)
+    ranked = sorted(
+        (
+            (max(float(score), 0.0), index, item)
+            for index, (score, item) in enumerate(zip(scores, CORPUS))
+            if query_vocabulary.intersection(item["content"].lower().split())
+        ),
+        key=lambda match: (-match[0], match[1]),
+    )[:top_k]
+
+    return [
+        {
+            "id": item["id"],
+            "content": item["content"],
+            "score": score,
+            "metadata": item["metadata"],
+            "retrieval_method": "bm25",
+        }
+        for score, _, item in ranked
+    ]
 
 
 if __name__ == "__main__":
