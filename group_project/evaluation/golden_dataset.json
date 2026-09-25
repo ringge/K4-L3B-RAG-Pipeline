@@ -1,0 +1,146 @@
+[
+  {
+    "id": "G01",
+    "case_type": "keyword",
+    "question": "Theo Chiến lược Marketing du lịch Việt Nam đến năm 2030, mục tiêu số lượt khách quốc tế và nội địa năm 2030 là bao nhiêu?",
+    "expected_answer": "Đón 35 triệu lượt khách quốc tế và phục vụ 160 triệu lượt khách nội địa.",
+    "expected_context": "- Đến năm 2025, phục hồi và phấn đấu đón 18 triệu lượt khách quốc tế; phục\nvụ 130 triệu lượt khách nội địa, duy trì tốc độ tăng trưởng khách nội địa từ 8 -\n9%/năm. Đến năm 2030, đón 35 triệu lượt khách quốc tế, tốc độ tăng trưởng từ\n13 - 15%/năm; phục vụ 160 triệu lượt khách nội địa, tốc độ tăng trưởng khách nội\nđịa từ 4 - 5%/năm.",
+    "source": "data/standardized/legal/chienluoc-marketing-dulich-vietnam.md"
+  },
+  {
+    "id": "G02",
+    "case_type": "keyword",
+    "question": "Sổ tay du lịch cộng đồng nêu năm bước phát triển dựa vào thị trường theo thứ tự nào?",
+    "expected_answer": "Xác định cơ hội, phân tích giải pháp, huy động đối tác, xây dựng và triển khai, giám sát và điều chỉnh.",
+    "expected_context": "Để phát triển du lịch cộng đồng theo phương pháp dựa vào thị trường, cần phải thực hiện theo 5 bước cơ bản, cụ thể là xác định cơ hội, phân tích giải pháp, huy động sự tham gia của các đối tác, xây dựng và triển khai, và cuối cùng là giám sát và điều chỉnh. Sổ tay du lịch cộng đồng Việt Nam được xây dựng theo phương pháp phát triển năm bước dựa vào thị trường này .",
+    "source": "data/standardized/legal/sotay-dulich-congdong-vietnam.md"
+  },
+  {
+    "id": "G03",
+    "case_type": "keyword",
+    "question": "Hoàng thành Thăng Long có địa chỉ nào trong cẩm nang Hà Nội?",
+    "expected_answer": "19C Hoàng Diệu, Điện Bàn, Ba Đình.",
+    "expected_context": "Hoàng thành Thăng Long là di sản văn hóa thế giới nằm giữa lòng Hà Nội và đã có bề dày lịch sử hơn 1300 năm. Nơi đây chứa đựng những di tích, di vật độc đáo, minh chứng cho [lịch sử](https://vnexpress.net/4-diem-du-lich-tim-hieu-lich-su-o-ha-noi-4134820.html) của Thăng Long – Hà Nội và lịch sử dân tộc Việt Nam trải qua nhiều thời đại. Địa chỉ: 19C Hoàng Diệu, Điện Bàn, Ba Đình.",
+    "source": "data/standardized/news/article_01.md"
+  },
+  {
+    "id": "G04",
+    "case_type": "keyword",
+    "question": "Cẩm nang Đà Nẵng nói cầu Rồng phun lửa, phun nước lúc mấy giờ vào những ngày nào trong tuần?",
+    "expected_answer": "Lúc 21h thứ sáu, thứ bảy và chủ nhật; bài cũng nêu các ngày lễ lớn.",
+    "expected_context": "Cầu Rồng được khánh thành năm 2013. Nối thẳng trục đường từ sân bay Đà Nẵng ra các bãi biển Mỹ Khê và Non Nước. Theo lịch phun nước, phun lửa, “con Rồng” trên cầu có khả năng phun lửa và phun nước như thật vào lúc 21h các ngày thứ sáu, thứ bảy, chủ nhật hàng tuần và các ngày lễ lớn trong năm như: tết Dương lịch, tết Âm lịch, 30/4, 2/9. Thường sẽ được phun lửa 2 lượt, mỗi lượt 9 lần, (tổng cộng 18 lần, thời gian khoảng 4 phút) và phun nước 3 lượt, mỗi lượt 30 giây (thời gian tầm 90 giây).",
+    "source": "data/standardized/news/article_02.md"
+  },
+  {
+    "id": "G05",
+    "case_type": "keyword",
+    "question": "Theo cẩm nang Hội An, vé tham quan 80.000 đồng có giá trị trong bao lâu?",
+    "expected_answer": "24 giờ.",
+    "expected_context": "Với vé tham quan giá 80.000 đồng cho một người giá trị trong 24h bạn có cơ hội tham quan ba trong số những điểm di tích nổi bật nhất ở phố cổ. Đó là Chùa Cầu, các hội quán Phúc Kiến, Quảng Triệu, Hải Nam, Triều Châu, các nhà cổ Quân Thắng, Đức An, Phùng Hưng, Tấn Ký... Ngoài ra vé tham quan cũng bao gồm các hoạt động nghệ thuật đường phố, trò chơi dân gian, chợ đêm... diễn ra sau 7 giờ tối.",
+    "source": "data/standardized/news/article_03.md"
+  },
+  {
+    "id": "G06",
+    "case_type": "keyword",
+    "question": "Theo cẩm nang Sài Gòn của Green SM, mùa khô kéo dài từ tháng nào đến tháng nào?",
+    "expected_answer": "Từ tháng 12 đến tháng 4 năm sau.",
+    "expected_context": "- **Mùa khô (tháng 12 – tháng 4 năm sau)**: Đây là thời điểm lý tưởng nhất để du lịch Sài Gòn vì trời ít mưa, nắng đẹp và không quá oi bức. Thời gian này đặc biệt thích hợp để dạo phố, tham quan di tích lịch sử, trải nghiệm ẩm thực đường phố hoặc khám phá các khu vui chơi ngoài trời.",
+    "source": "data/standardized/news/article_06.md"
+  },
+  {
+    "id": "G07",
+    "case_type": "semantic",
+    "question": "Theo sổ tay du lịch cộng đồng, một phần doanh thu dành cho cả cộng đồng có thể hỗ trợ những việc gì?",
+    "expected_answer": "Có thể tái đầu tư vào cơ sở hạ tầng như cầu, đường, điện hoặc phục vụ y tế, giáo dục.",
+    "expected_context": "**Chia sẻ lợi ích.** Việc chia sẻ các lợi ích từ du lịch cho cộng đồng đòi hỏi cộng đồng có thể nhận được các lợi ích giống như các đối tác liên quan khác. Trong việc chia sẻ lợi ích, doanh thu từ các hoạt động du lịch thường được chia cho tất cả những người tham gia, và một phần để riêng đóng góp cho toàn bộ cộng đồng địa phương thông qua quỹ cộng đồng, quỹ này có thể được sử dụng cho các mục đích như tái đầu tư vào cơ sở hạ tầng như cầu, đường, điện hoặc các lĩnh vực lợi ích cộng đồng khác như y tế và giáo dục.",
+    "source": "data/standardized/legal/sotay-dulich-congdong-vietnam.md"
+  },
+  {
+    "id": "G08",
+    "case_type": "semantic",
+    "question": "Chiến lược marketing du lịch ưu tiên môi trường nào để quảng bá và xây dựng nội dung điểm đến?",
+    "expected_answer": "Ưu tiên marketing số, xây dựng cơ sở dữ liệu, hệ thống nội dung số và phát huy các kênh marketing trên nền tảng số.",
+    "expected_context": "d) Ưu tiên triển khai marketing số; xây dựng và phát huy hiệu quả cơ sở dữ\nliệu marketing về điểm đến, sản phẩm dịch vụ du lịch Việt Nam, hình thành hệ\nthống nội dung số, phát huy tốt các kênh marketing nền tảng số.",
+    "source": "data/standardized/legal/chienluoc-marketing-dulich-vietnam.md"
+  },
+  {
+    "id": "G09",
+    "case_type": "semantic",
+    "question": "Trong cẩm nang TP.HCM, nơi nào phù hợp để đi rừng ngập mặn và đảo khỉ khi chỉ có ít thời gian?",
+    "expected_answer": "Cần Giờ.",
+    "expected_context": "Thư thái giữa ngàn\nxanh Cần Giờ\n“Ốc đảo xanh” của thành phố là điểm\nđến hoàn hảo cho những ai muốn tận\nhưởng cảnh sắc thiên nhiên Nam Bộ với\nquỹ thời gian eo hẹp. Chỉ với hơn một\ntiếng đi xe, bạn sẽ được tận hưởng rừng\nngập mặn, đảo khỉ, làn gió biển trong\nlành và thiên đường hải sản tươi rói.",
+    "source": "data/standardized/legal/camnang-dulich-saigon.md"
+  },
+  {
+    "id": "G10",
+    "case_type": "semantic",
+    "question": "Món ăn sáng Đà Nẵng nào có sợi dẹt, tôm hoặc thịt, trứng, đậu phộng và bánh đa giòn?",
+    "expected_answer": "Mì Quảng.",
+    "expected_context": "Đây là “thức quà sáng” phổ biến ở Đà Nẵng. Một số nơi trên đường Hải Phòng, Nguyễn Hữu Thọ, Nguyễn Công Trứ bán cả ngày. Một tô mì quảng “truyền thống” có sợi mì trắng dẹt, tôm, thịt heo hoặc gà, trứng, đậu phộng rang, bánh đa giòn, ăn kèm các loại rau thơm.",
+    "source": "data/standardized/news/article_02.md"
+  },
+  {
+    "id": "G11",
+    "case_type": "semantic",
+    "question": "Du khách muốn dạo phố Hội An khi trời mát và nắng chưa gắt nên chọn khoảng thời gian nào theo cẩm nang?",
+    "expected_answer": "Ba tháng đầu năm.",
+    "expected_context": "Ba tháng đầu năm là thời gian lý tưởng nhất để rong chơi tại Hội An khi nắng không quá gắt, trời mát mẻ, thi thoảng có mưa nhỏ.",
+    "source": "data/standardized/news/article_03.md"
+  },
+  {
+    "id": "G12",
+    "case_type": "semantic",
+    "question": "Bài gợi ý du lịch theo tháng chọn địa danh miền Bắc nào để đi du thuyền ngắm vịnh trong tháng 11?",
+    "expected_answer": "Hạ Long.",
+    "expected_context": "Tháng 11 là thời điểm lý tưởng để khám phá miền Bắc Việt Nam, nơi thời tiết chuyển mình sang se lạnh, cảnh sắc mùa thu tuyệt đẹp với lá vàng và không khí trong lành. Hà Nội, với vẻ đẹp cổ kính và những hàng cây lá đỏ, là điểm đến không thể bỏ qua. Đây cũng là thời gian thích hợp để thăm quan Hạ Long, nơi bạn có thể tận hưởng vẻ đẹp kỳ vĩ của vịnh biển trên một chuyến du thuyền trong tiết trời mát mẻ.",
+    "source": "data/standardized/news/article_04.md"
+  },
+  {
+    "id": "G13",
+    "case_type": "cross_source",
+    "question": "Bài Du lịch Việt Nam ghi nhận thực tế đón bao nhiêu lượt khách quốc tế năm 2019?",
+    "expected_answer": "18 triệu lượt khách quốc tế.",
+    "expected_context": "Năm 2019, ngành Du lịch Việt Nam lập kỷ lục khi lần đầu tiên đón 18 triệu lượt khách quốc tế, tăng 16,2% so với năm 2018.",
+    "source": "data/standardized/news/article_05.md"
+  },
+  {
+    "id": "G14",
+    "case_type": "cross_source",
+    "question": "Chiến lược marketing đặt mục tiêu bao nhiêu khách quốc tế vào năm 2025, khác với số liệu thực tế năm 2019?",
+    "expected_answer": "Phấn đấu đón 18 triệu lượt khách quốc tế năm 2025.",
+    "expected_context": "- Đến năm 2025, phục hồi và phấn đấu đón 18 triệu lượt khách quốc tế; phục\nvụ 130 triệu lượt khách nội địa, duy trì tốc độ tăng trưởng khách nội địa từ 8 -\n9%/năm. Đến năm 2030, đón 35 triệu lượt khách quốc tế, tốc độ tăng trưởng từ\n13 - 15%/năm; phục vụ 160 triệu lượt khách nội địa, tốc độ tăng trưởng khách nội\nđịa từ 4 - 5%/năm.",
+    "source": "data/standardized/legal/chienluoc-marketing-dulich-vietnam.md"
+  },
+  {
+    "id": "G15",
+    "case_type": "cross_source",
+    "question": "Riêng cẩm nang Đà Nẵng ghi mùa mưa ở thành phố này bắt đầu và kết thúc vào tháng nào?",
+    "expected_answer": "Bắt đầu tháng 8 và kéo dài đến tháng 12.",
+    "expected_context": "Đà Nẵng có vị trí địa lý đặc biệt, nằm ở vùng chuyển tiếp giữa hai miền Bắc – Nam. Chịu ảnh hưởng chủ yếu của khí hậu nhiệt đới gió mùa phía Nam. Thành phố có hai mùa rõ rệt trong năm. Mùa khô kéo dài từ tháng 1 đến tháng 7. Và mùa mưa bắt đầu từ tháng 8 đến tháng 12. Đôi khi, thời tiết lạnh nhẹ vào mùa đông. Nhưng không kéo dài và không quá khắc nghiệt. Và dù ở thời điểm nào trong năm, thì Đã Nẵng vẫn mang đến cho bạn những trải nghiệm rất riêng.",
+    "source": "data/standardized/news/article_02.md"
+  },
+  {
+    "id": "G16",
+    "case_type": "cross_source",
+    "question": "Theo cẩm nang Sài Gòn của Green SM, mùa mưa ở Sài Gòn kéo dài từ tháng nào đến tháng nào?",
+    "expected_answer": "Từ tháng 5 đến tháng 11.",
+    "expected_context": "- **Mùa mưa (tháng 5 – tháng 11)**: Sài Gòn thường có những cơn mưa rào bất chợt nhưng không kéo dài. Nếu bạn thích không gian lãng mạn, những cơn mưa nhẹ sẽ làm thành phố mang một vẻ đẹp rất riêng. Chỉ cần chuẩn bị áo mưa hoặc ô là bạn vẫn có thể tận hưởng chuyến đi một cách trọn vẹn.",
+    "source": "data/standardized/news/article_06.md"
+  },
+  {
+    "id": "G17",
+    "case_type": "cross_source",
+    "question": "Chiến lược marketing quy định tiêu đề quảng bá nào cho khách quốc tế và tiêu đề nào cho khách nội địa?",
+    "expected_answer": "Khách quốc tế: “Vietnam - Timeless Charm”; khách nội địa: “Việt Nam - Vẻ đẹp bất tận”.",
+    "expected_context": "+ Tiêu đề, biểu tượng: Tiếp tục quảng bá thương hiệu du lịch Việt Nam với\ntiêu đề và biểu tượng “Vietnam - Timeless Charm” đối với thị trường khách du\nlịch quốc tế và “Việt Nam - Vẻ đẹp bất tận” đối với thị trường khách du lịch nội\nđịa. Phát triển các tiêu đề, biểu tượng nhánh phù hợp với các thị trường mục tiêu\ntheo từng giai đoạn.",
+    "source": "data/standardized/legal/chienluoc-marketing-dulich-vietnam.md"
+  },
+  {
+    "id": "G18",
+    "case_type": "cross_source",
+    "question": "Theo bài Green SM về Sài Gòn, Saigon Water Bus khởi hành từ bến nào?",
+    "expected_answer": "Bến Bạch Đằng.",
+    "expected_context": "### Đi buýt trên sông Sài Gòn (Saigon Water Bus)\n\nNếu đã quen với những chuyến xe buýt trên đường phố, tại sao không thử đổi gió với một hành trình trên Saigon Water Bus? Đây là phương tiện lý tưởng để du khách tận hưởng khung cảnh thành phố từ dòng sông Sài Gòn thơ mộng, đặc biệt là vào buổi hoàng hôn khi ánh đèn lung linh phản chiếu trên mặt nước.\n\nHành trình khởi hành từ bến Bạch Đằng, đi qua nhiều điểm dừng như Linh Đông, Bình An, Hiệp Bình Chánh, du khách được chiêm ngưỡng những tòa nhà chọc trời và không gian ven sông thoáng đãng. Chỉ cần mua vé tại bến hoặc đặt trước qua ứng dụng, bạn đã có thể tận hưởng một chuyến đi yên bình giữa lòng thành phố náo nhiệt.",
+    "source": "data/standardized/news/article_06.md"
+  }
+]
