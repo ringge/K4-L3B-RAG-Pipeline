@@ -13,7 +13,7 @@ Không so sánh threshold với RRF score vì hai thang đo khác nhau.
 
 from .task5_semantic_search import semantic_search
 from .task6_lexical_search import lexical_search
-from .task7_reranking import rerank_rrf
+from .task7_reranking import rerank_rrf, rerank_with_jina
 from .task8_pageindex_vectorless import pageindex_search
 
 
@@ -30,10 +30,18 @@ def retrieve(
     """Trả về hybrid hoặc pageindex SearchResult."""
     dense = semantic_search(query, top_k=top_k * 2)
     sparse = lexical_search(query, top_k=top_k * 2)
-    hybrid = (
-        rerank_rrf([dense, sparse], top_k=top_k)
-        if use_reranking else dense[:top_k]
-    )
+    if use_reranking:
+        # RRF chỉ chạy một lần để hợp nhất dense và BM25.
+        hybrid = rerank_rrf([dense, sparse], top_k=top_k)
+        try:
+            jina_results = rerank_with_jina(query, hybrid, top_k=top_k)
+            if jina_results:
+                hybrid = jina_results
+        except Exception:
+            # Jina là bước tùy chọn; lỗi cấu hình/API không làm hỏng retrieval.
+            pass
+    else:
+        hybrid = dense[:top_k]
 
     best_dense_score = dense[0]["score"] if dense else 0.0
     if best_dense_score < score_threshold:
