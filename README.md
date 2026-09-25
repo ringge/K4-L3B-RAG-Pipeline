@@ -29,6 +29,10 @@ cp .env.example .env
 
 Điền API key cần dùng trong `.env`; không commit file này.
 
+Để dùng Jina cho embedding, đặt `EMBEDDING_PROVIDER=jina` và `JINA_API_KEY` trong `.env`. Task 4 dùng `jina-embeddings-v3` với `task=text-matching` và lưu vectors vào collection `rag_documents_jina_v3`. Khi triển khai Task 5, dùng lại `embed_texts()` và `get_collection()` để tìm kiếm trong cùng collection. `EMBEDDING_MODEL` chỉ áp dụng cho `sentence_transformers`.
+
+Task 4 so sánh nội dung, metadata và cấu hình embedding với ChromaDB để bỏ qua chunks không đổi. Collection tạo trước tính năng này sẽ được embed lại một lần để ghi cấu hình embedding; các lần chạy sau sẽ bỏ qua chunks không đổi. Task 4 chưa xóa chunks cũ khi tài liệu nguồn bị xóa hoặc ngắn đi.
+
 ```bash
 # 1. Thu thập và chuẩn hoá
 python -m src.task1_collect_legal_docs

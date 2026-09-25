@@ -1066,6 +1066,23 @@ wheels = [
 ]
 
 [[package]]
+name = "firecrawl-py"
+version = "2.16.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "nest-asyncio" },
+    { name = "pydantic" },
+    { name = "python-dotenv" },
+    { name = "requests" },
+    { name = "websockets" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/97/7a/e6911fe11d140db5b5deda7a3ad6ee80c7615fcb248097ec7a4bc784eff6/firecrawl_py-2.16.5.tar.gz", hash = "sha256:7f5186bba359a426140a6827b550a604e62bfbeda33ded757952899b1cca4c83", size = 40154, upload-time = "2025-08-06T20:38:23.92Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0f/99/fa2a41e2c1c5ff3e01150470b0a8a630792a363724c188bf6522e6798be7/firecrawl_py-2.16.5-py3-none-any.whl", hash = "sha256:3caed19b8f21522ab9c2193c2226990f2468e6bc5669ef54aa156e4230a5e35e", size = 75978, upload-time = "2025-08-06T20:38:22.857Z" },
+]
+
+[[package]]
 name = "flatbuffers"
 version = "25.12.19"
 source = { registry = "https://pypi.org/simple" }
@@ -1863,6 +1880,7 @@ dependencies = [
     { name = "chromadb" },
     { name = "crawl4ai" },
     { name = "datasets" },
+    { name = "firecrawl-py" },
     { name = "fpdf2" },
     { name = "google-genai" },
     { name = "langchain-community" },
@@ -1897,6 +1915,7 @@ requires-dist = [
     { name = "chromadb", specifier = ">=0.5.0,<2" },
     { name = "crawl4ai", specifier = "==0.9.3" },
     { name = "datasets", specifier = ">=4.0.0,<6" },
+    { name = "firecrawl-py", specifier = ">=2.0.0,<3" },
     { name = "fpdf2", specifier = ">=2.7.0,<3" },
     { name = "google-genai", specifier = ">=1.0.0,<3" },
     { name = "langchain-community", specifier = "==0.4.1" },
